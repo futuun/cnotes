@@ -3,11 +3,10 @@ import { connect } from 'react-redux'
 import { Platform } from 'react-native'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { submitNote } from '../actions/list'
 import { fonts, colors } from '../constants'
 import { RightButton, LeftButton } from '../components/navigation'
 import { toggleLiked, toggleAdd } from '../actions/navigation'
-
-const submitNote = () => 'todo'
 
 const Container = styled.View`
   flex: 1;
