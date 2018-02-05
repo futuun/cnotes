@@ -1,0 +1,27 @@
+processors:
+    - stylelint-processor-styled-components
+extends:
+    - stylelint-config-standard
+    - stylelint-config-styled-components
+    - stylelint-config-idiomatic-order
+    - ./node_modules/prettier-stylelint/config.js
+syntax: scss
+rules:
+    font-family-no-missing-generic-family-keyword: null
+    no-empty-source: null
+    property-no-unknown:
+        - true
+        - ignoreProperties:
+            - padding-vertical
+            - padding-horizontal
+            - margin-vertical
+            - margin-horizontal
+            - shadow-color
+            - shadow-offset
+            - shadow-radius
+            - shadow-opacity
+            - elevation
+            - aspect-ratio
+            - writing-direction
+            - tint-color
+            - ^border-(bottom|top)?-?(end|start)

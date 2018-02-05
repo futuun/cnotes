@@ -1,0 +1,41 @@
+---
+env:
+  jest: true
+extends:
+  - airbnb
+  - prettier
+  - prettier/react
+globals:
+  __DEV__: true
+parser: babel-eslint
+plugins:
+  - react
+  - react-native
+  - jsx-a11y
+  - prettier
+  - import
+rules:
+  jsx-a11y/accessible-emoji: 0
+  jsx-a11y/anchor-is-valid: 0
+  prettier/prettier:
+    - error
+    -
+      printWidth: 80
+      singleQuote: true
+      tabWidth: 2
+      trailingComma: all
+      semi: false
+  react-native/no-color-literals: error
+  react-native/no-inline-styles: error
+  react-native/no-unused-styles: error
+  react-native/split-platform-components: error
+  react/jsx-filename-extension:
+    - error
+    - extensions:
+        - .js
+  import/order:
+    - error
+    -
+      newlines-between: never
+settings:
+  import/resolver: reactnative

@@ -1,0 +1,19 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    ["styled-components", {
+      "displayName": true,
+      "preprocess": false,
+      "minify": false,
+      "transpileTemplateLiterals": false,
+      "uglifyPure": false
+    }]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  }
+}
