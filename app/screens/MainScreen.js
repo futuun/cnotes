@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import LinearGradient from 'react-native-linear-gradient'
 import { ifIphoneX } from 'react-native-iphone-x-helper'
 import { colors } from '../constants'
+import NotesList from '../components/NotesList'
 
 const GradientUnderNav = styled(LinearGradient)`
   height: ${Platform.select({
@@ -42,6 +43,7 @@ export default class MainScreen extends Component {
           start={{ x: 1.3, y: 0.3 }}
           end={{ x: 0.5, y: 0.8 }}
         />
+        <NotesList />
       </Container>
     )
   }
